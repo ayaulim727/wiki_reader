@@ -9,9 +9,9 @@ class FavoriteListItemWidget extends StatelessWidget {
     return GestureDetector(
       onTap: onTap,
       child: Container(
-        child: Text(' '),
-        width: 100,
-        height: 10
+        child: Text(title),
+        width: 1000,
+        height: 25
       )
     );
   }
