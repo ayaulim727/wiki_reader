@@ -6,6 +6,9 @@ class FavScreen extends StatelessWidget {
   const FavScreen({super.key});
   @override
   Widget build(BuildContext context) {
-    return FavoriteView(summaries: ArticleHiveBox.getAll(), onTap: (){});
+    return FavoriteView(
+      summaries: ArticleHiveBox.getAll(), 
+      box: ArticleHiveBox.articleBox
+    );
   }
 }
