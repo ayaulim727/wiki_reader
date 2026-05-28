@@ -11,6 +11,15 @@ class FavoriteView extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      appBar: AppBar(
+        backgroundColor: const Color.fromARGB(255, 184, 124, 253),
+		    foregroundColor: Colors.white,
+        title: const Text("Favorite"),
+        titleSpacing: 00.0,
+        centerTitle: true,
+        toolbarHeight: 40,
+        
+      ), 
       body: ValueListenableBuilder(
         valueListenable: box.listenable(),
         builder: (context, state, _) {
