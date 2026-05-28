@@ -1,9 +1,9 @@
-import 'package:flutter/widgets.dart';
 import 'package:flutter_bloc/flutter_bloc.dart';
 import 'package:go_router/go_router.dart';
 import 'package:wiki_reader/root_screen.dart';
 import 'package:wiki_reader/ui/article_page/article_screen.dart';
 import 'package:wiki_reader/ui/favorite/favorite_item_cubit.dart';
+import 'package:wiki_reader/ui/favorite/favorite_item_screen.dart';
 import 'package:wiki_reader/ui/favorite/favorite_screen.dart';
 import 'package:go_provider/go_provider.dart';
 
@@ -33,7 +33,7 @@ final router = GoRouter(initialLocation: "/random",
               routes: [
                 GoRoute(
                   path: "item",
-                  builder: (_, _) => Text(" ")
+                  builder: (_, _) => const FavItemScreen()
                 ),
               ],
             ),
