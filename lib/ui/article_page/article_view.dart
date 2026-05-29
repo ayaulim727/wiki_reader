@@ -32,7 +32,7 @@ class ArticleView extends StatelessWidget {
           ),
           const SizedBox(width: 220),
           FloatingActionButton(
-            child: const Icon(Icons.replay),
+            child: const Icon(Icons.cached),
             onPressed: context.read<ArticleCubit>().updateArticle,
           ),
         ],

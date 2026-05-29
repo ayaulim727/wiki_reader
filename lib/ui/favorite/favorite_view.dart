@@ -12,8 +12,8 @@ class FavoriteView extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        backgroundColor: const Color.fromARGB(255, 184, 124, 253),
-		    foregroundColor: Colors.white,
+        backgroundColor: const Color.fromARGB(255, 255, 8, 8),
+		    foregroundColor: const Color.fromARGB(255, 255, 255, 255),
         title: const Text("Favorite"),
         titleSpacing: 00.0,
         centerTitle: true,
